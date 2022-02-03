@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Solution {
+
+	public static void main(String[] args) {
+         Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int temp=0;
+        for(int i=1; i<=n; i++){
+            
+            for(int j=1; j<=n-i; j++){
+                System.out.print(" ");
+            }
+            
+            for(int j=i; j<=(2*i)-1; j++){
+                System.out.print(j);
+                temp=j;
+            }
+            
+            for(int k =temp-1; k>=i; k--){
+                System.out.print(k);
+            }
+            
+            System.out.println();
+        }
+	}
+}

@@ -1,0 +1,28 @@
+public class Solution {
+
+    public static int arrayRotateCheck(int[] arr){
+        
+        if(arr.length==0){
+                return 0;
+        }
+    	
+        int count1=1;
+        int count2=1;
+        for(int i=0; i<arr.length-1; i++){
+            
+            if(arr[i+1]>arr[i]){
+                count1++;
+                count2++;
+            }
+            else{
+                break;
+            }
+            
+        }
+        if(count1==arr.length){
+                return 0;
+        }
+        return count2;
+    }
+
+}

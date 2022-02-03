@@ -1,0 +1,11 @@
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int x = scan.nextInt();
+        int n = scan.nextInt();
+        double d= Math.pow(x,n);
+        int power = (int)d;
+        System.out.print(power);
+    }
+}

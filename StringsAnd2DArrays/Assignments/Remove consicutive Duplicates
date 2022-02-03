@@ -1,0 +1,21 @@
+
+public class Solution {
+
+	 public static String removeConsecutiveDuplicates(String str) {
+        String str1 ="";
+        str1+=str.charAt(0);
+        int last = str1.charAt(0);
+        for(int i=1; i<str.length(); i++){
+            if(last==str.charAt(i)){
+                continue;
+            }
+            else{
+                str1+=str.charAt(i);
+                last=str.charAt(i);
+            }
+        }
+		
+        return str1;
+     }
+
+}

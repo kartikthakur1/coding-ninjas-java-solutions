@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Solution {
+	public static void main(String[] args) {
+         Scanner scan= new Scanner(System.in);
+        int S = scan.nextInt();//first 
+        int E = scan.nextInt();//end
+        int W = scan.nextInt();//step size
+        
+        for(int i=S; i<=E; i=i+W){
+            
+            float temp = 5/9f;
+            double temp2 = (i-32)*temp;
+            int result = (int)temp2;
+            System.out.println(i+" "+result);
+        }
+	}
+
+}

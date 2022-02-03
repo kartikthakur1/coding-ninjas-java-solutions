@@ -1,0 +1,39 @@
+import java.util.*;
+public class Main {
+	
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int N = s.nextInt();
+		int pre = s.nextInt();
+		int i = 1;
+		boolean isDec = true;
+		while(i < N) {
+			int cur = s.nextInt();
+			if(cur == pre) {
+				System.out.println(false);
+				return;
+			}
+			else if(cur > pre) {
+				isDec = false;
+				pre = cur;
+				i++;
+				continue;
+			}
+			else {
+				if(isDec == false) {
+					System.out.println("false");
+					return;
+				}
+				else {
+					pre = cur;
+					i++;
+					continue;
+				}
+			}
+		}
+		System.out.println(true);
+
+       
+
+	}
+}

@@ -1,0 +1,15 @@
+import java.util.*;
+public class Solution {
+	public static void main(String[] args) {
+		 Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for(int i=1; i<=n; i++){
+            for(int j=i; j<=2*i-1; j++){
+            
+                char temp = (char)('A'+j-1);
+                System.out.print(temp);
+            }
+            System.out.println();
+        }
+	}
+}

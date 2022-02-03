@@ -1,0 +1,12 @@
+import java.util.*;
+public class Solution {
+	
+	public static int sum(int[] arr) {
+        int add=0;
+		for(int i=0; i<=arr.length-1; i++){
+            add+=arr[i];
+        }
+        return add;
+        
+	}
+}
